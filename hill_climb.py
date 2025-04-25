@@ -1,3 +1,12 @@
+'''
+1. Start with initial state
+2. Loop:
+   a. Evaluate all neighbors
+   b. Move to the one with best score
+   c. If no improvement, stop
+'''
+
+
 import random
 
 def calculate_conflicts(board):
