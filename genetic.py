@@ -1,3 +1,15 @@
+'''
+1. Generate initial population
+2. Repeat:
+   a. Evaluate fitness
+   b. Select parents
+   c. Crossover to produce offspring
+   d. Apply mutation
+   e. Replace population with new generation
+3. Stop when solution found or max generations reached
+'''
+
+
 import random
 
 # target equation function
