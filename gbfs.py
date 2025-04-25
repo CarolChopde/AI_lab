@@ -1,3 +1,14 @@
+'''
+1. Add start node to open_list
+2. While open_list not empty:
+   a. Pop node with smallest h
+   b. If goal, return path
+   c. For each neighbor:
+      - If not visited:
+        - Add to open_list
+'''
+
+
 import heapq
 
 class Node:
