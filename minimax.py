@@ -1,3 +1,23 @@
+'''
+function minimax(node, depth, isMaximizingPlayer):
+    if node is terminal or depth == 0:
+        return evaluate(node)
+
+    if isMaximizingPlayer:
+        best = -∞
+        for each child of node:
+            val = minimax(child, depth - 1, False)
+            best = max(best, val)
+        return best
+    else:
+        best = +∞
+        for each child of node:
+            val = minimax(child, depth - 1, True)
+            best = min(best, val)
+        return best
+'''
+
+
 import math
 
 def print_board(board):
