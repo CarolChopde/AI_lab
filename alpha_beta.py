@@ -1,3 +1,27 @@
+'''
+function minimax(node, depth, maximizingPlayer, α, β):
+  if terminal or depth == 0:
+    return utility
+
+  if maximizing:
+    maxEval = -∞
+    for child in children:
+      eval = minimax(child, depth-1, false, α, β)
+      maxEval = max(maxEval, eval)
+      α = max(α, eval)
+      if β ≤ α: break
+    return maxEval
+  else:
+    minEval = ∞
+    for child in children:
+      eval = minimax(child, depth-1, true, α, β)
+      minEval = min(minEval, eval)
+      β = min(β, eval)
+      if β ≤ α: break
+    return minEval
+'''
+
+
 import math
 
 def print_board(board):
