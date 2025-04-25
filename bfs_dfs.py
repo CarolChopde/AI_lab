@@ -1,3 +1,14 @@
+'''
+1. Enqueue initial node into frontier
+2. Mark as visited
+3. While frontier is not empty:
+   a. Dequeue node
+   b. If goal, reconstruct path and return
+   c. For each unvisited neighbor:
+      - Enqueue it
+      - Mark visited and store parent
+'''
+
 #bfs
 from collections import deque
 
@@ -73,6 +84,17 @@ bfs -> 1 2 5 7
 dfs -> 1 2 5 7 or 1 3 6 or fails 
 
 '''
+
+
+'''
+1. Push initial node onto frontier
+2. While frontier is not empty:
+   a. Pop node
+   b. If goal, reconstruct path and return
+   c. If node not explored:
+      - Mark explored
+      - Push each neighbor (not explored) onto stack'''
+
 def dfs(initial_state, goal_state, transitions):
     frontier = [initial_state]
     explored = set()
