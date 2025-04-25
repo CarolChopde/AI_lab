@@ -48,7 +48,31 @@ if __name__ == "__main__":
     goal_state = int(input("Enter the goal state: "))
     bfs(initial_state, goal_state, transitions)
 
-#dfs-------------------------------------------------
+#dfs
+'''input example
+6 edges
+1 2 
+1 3 
+2 4 
+2 5
+3 6
+3 7
+initial_state = 1
+goal_state = 7
+path -> 1 3 7 
+
+6 edges
+1 2
+1 3
+2 4
+2 5
+3 6
+5 7
+1 --> 7
+bfs -> 1 2 5 7
+dfs -> 1 2 5 7 or 1 3 6 or fails 
+
+'''
 def dfs(initial_state, goal_state, transitions):
     frontier = [initial_state]
     explored = set()
