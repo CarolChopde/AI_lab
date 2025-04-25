@@ -1,3 +1,12 @@
+'''
+1. Initialize beam with root
+2. Repeat for each depth level:
+   a. Expand all nodes in beam
+   b. Keep top-k scoring successors
+   c. If goal found, stop
+'''
+
+
 import heapq
 #User input
 def get_distance_matrix(cities):
