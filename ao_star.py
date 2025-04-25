@@ -1,4 +1,14 @@
 # AO* Algorithm Implementation
+'''
+1. Initialize open_list with start node (f = h)
+2. While open_list not empty:
+   a. Remove node with lowest f
+   b. If goal, reconstruct path
+   c. For each neighbor:
+      - If new path is better:
+        - Update cost and parent
+        - Add to open_list
+'''
 
 def ao_star(node):
     """
